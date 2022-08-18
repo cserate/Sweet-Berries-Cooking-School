@@ -1,4 +1,41 @@
 body {
-    background-color: lavender;
+    background-color: pink;
     color: white;
+    font-family: "Roboto, sans-serif";
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px auto auto auto 60px;
+    
+}
+
+.header-flex {
+    grid-column: 2;
+}
+
+.header-flex img {
+    height: 80px;
+}
+
+.banner-flex {
+    grid-column: 1;
+}
+
+.banner-flex img {
+    border-radius: 20px;
+    height: 150px;
+    width: 50%;
+}
+
+.banner-flex h1 {
+    width: 50%;
+}
+.form {
+    grid-column: 1;
+}
+
+.footer {
+    grid-column: 2;
 }
