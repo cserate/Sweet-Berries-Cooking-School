@@ -1,6 +1,5 @@
 body {
     background-image: url(https://img.freepik.com/free-vector/flat-design-bakery-template_23-2149389475.jpg?w=2000);
-    background-image:
     color: white;
     font-family: "Roboto", sans-serif;
 }
@@ -91,6 +90,7 @@ form legend {
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
+    color: black;
    
     
 }
@@ -103,6 +103,7 @@ form fieldset {
     height: 250px;
     justify-items: center;
     text-align: center;
+    color: black;
 }
 
 form button {
