@@ -84,6 +84,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 form legend {
@@ -106,11 +107,14 @@ form fieldset {
     color: black;
 }
 
+.step4 {
+    border: 10px solid #FF9002;
+}
 form button {
     background: linear-gradient(#FF4C4C, #A94E97);
     color: white;
     border-radius: 20px;
-    border: none;
+    border: 1px solid black;
 
 }
 .footer {
