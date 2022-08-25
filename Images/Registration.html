@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/registration.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="./Registration_files/registrationstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body cz-shortcut-listen="true">
+    <div class="grid-container">
+        <div class="header-flex">
+            <img src="./Registration_files/logo.png">
+            <div class="navbar-flex">
+                <a href="http://127.0.0.1:5500/registration.html#">Courses</a>
+                <a href="http://127.0.0.1:5500/registration.html#">About us</a>
+                <button>Home</button>
+            </div>
+        </div>
+
+        <div class="banner-flex">
+            <h1>Register Below!</h1>
+            <img src="./Registration_files/banner.jpg">
+            
+        </div>
+
+        <!--this is where i will enter the form data
+            with the input fields, dropdown box, and submit/reset button-->
+        <form>
+            <div class="steps">
+
+                <fieldset>
+                    <legend>Step 1: Tell Us About You</legend>
+                    <label for="firstname">First Name:</label>
+                    <br>
+                    <input id="firstname" type="text" required="">
+                    <br>
+                    <label for="lastname">Last Name:</label>
+                    <br>
+                    <input id="lastname" type="text" required="">
+                    <br>
+                    <label for="age">Age:</label>
+                    <br>
+                    <input id="age" type="number">
+                </fieldset>
+                <fieldset>
+                    <legend>Step 2: Create an Account</legend>
+                    <label for="username">Username:</label>
+                    <br>
+                    <input id="username" type="text" placeholder="email" required="">
+                    <br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input id="password" type="text" placeholder="min 6 characters" required="">
+                </fieldset>
+                <fieldset>
+                    <legend>Step 3: Select Your Online Course</legend> 
+                    <label for="courses"> Course:</label>
+                    <select name="courses" id="courses">
+                        <option value="cookingessentials">Cooking Essentials</option>
+                        <option value="chefskills">Chef Skills</option>
+                        <option value="nutrition">Nutrition in Cooking</option>
+                        <option value="plant">Plant-Based Cooking</option>
+                        <option value="teen">Teen's Kitchen</option>
+                    </select>
+                </fieldset>
+                <fieldset class="step4">
+                    <legend>Step 4: Add a Comment</legend> 
+                    <br>
+                    <textarea id="comment" placeholder="Write your comments and questions here"></textarea>--&gt;
+                </fieldset>
+            </div>
+            <button>Submit</button>
+                <input type="reset">
+            
+        </form>
+        <div class="footer">
+            <p>Sweet Berries</p>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

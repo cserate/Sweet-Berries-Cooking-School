@@ -197,19 +197,6 @@ h2{
         font-size: 2em;
     }
 }
-/* Mobile and Tablet Styles */
-@media only screen and (max-width: 960px) {
-  body {
-    
-  }
-    .description {
-        width: 100%
-    }
 
-    .footer h2 {
-        text-align: center;
-    }
-    }
-}
 
 
